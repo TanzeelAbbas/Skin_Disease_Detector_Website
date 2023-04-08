@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>Skin DISEASE Detection</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .card-style {
+            background-color: #dcdcdc;
+        }
+        
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: rgb(153, 156, 150);
+            /* font-size: 1rem; */
+        }
+        
+        @media (max-width: 430px) and (min-width: 200px) {
+            .contents {
+                font-size: 0.6rem;
+                color: chartreuse;
+            }
+            .content-h1 {
+                font-size: 1rem;
+            }
+        }
+        
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <img src="static/Images/img1.jpg" class="w3-border w3-padding" alt="Skin DISEASE Detection" style="width:100%;  height:400px;">
+    </div>
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+ 
+                </span>
+            </div>
+                 <div>
+                     <h1 style="padding: 15px; background-color: rgb(153, 156, 150); background-color: black; color: white;" class="text-center mb-5 content-h1 rounded">
+                         {{pred_output}} </h1>
+                 </div>           
+        </div>
+    </div>
+</body>
+
+</html>
